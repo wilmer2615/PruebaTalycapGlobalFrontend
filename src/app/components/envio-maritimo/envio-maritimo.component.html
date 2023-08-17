@@ -1,0 +1,24 @@
+<h1>Listado de Envios Maritimos</h1>
+<hr>
+<table class="table table-dark table-hover mt-5">
+    <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">id del Envio</th>
+          <th scope="col">Numero de Flota</th>
+          <th scope="col"></th> 
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let envio of listEnviosMaritimos">
+          <th scope="row">{{envio.id}}</th>
+          <td>{{envio.idEnvio}}</td>
+          <td>{{envio.numeroFlota}}</td>          
+          <td>
+              <i (click)="deleteEnvioMaritimo(envio.id)" class="far fa-solid fa-trash-can text-danger"></i>
+          </td>
+        </tr>        
+      </tbody>
+  </table>
+
+  
