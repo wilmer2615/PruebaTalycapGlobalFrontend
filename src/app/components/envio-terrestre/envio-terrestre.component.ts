@@ -32,7 +32,7 @@ export class EnvioTerrestreComponent {
 
   deleteEnvioTerrestre(id: number) {
     this._envioTerrestreService.deleteEnvioTerrestre(id).subscribe(data => {
-      this.toastr.error('El envio terrestre fue eliminado con exito!!!', 'Envio Eliminado!  ');
+      this.toastr.error('El envio terrestre fue eliminado con exito!!!', 'Envio Eliminado! nuevo cambio');
       this.getEnviosTerrestres();
     }, error => {
       console.log(error);
